@@ -12,14 +12,10 @@ comp_score = "0"
 
 player_score = "0"
 
-if int(comp_score) > "2":
-    play_game == False
-elif int(player_score) > "2":
-    play_game == False
-else play_game == True
+print("Hi %s. Ready to play some 'rock, paper,scissors'? \n" % name)
 
 while play_game == True:
-    print("Hi %s. Ready to play some 'rock, paper,scissors'? \n" % name)
+
     player_choice = input("\nType 1 for Rock, 2 for Paper, and 3 for Scissors.")
 
     player_choice = rps[int(player_choice) - 1]
