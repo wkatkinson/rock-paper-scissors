@@ -14,17 +14,17 @@ player_score = "0"
 
 while play_game == True:
     print("Hi %s. Ready to play some 'rock, paper,scissors'? \n" % name)
-    kellet_choice = input("\nType 1 for Rock, 2 for Paper, and 3 for Scissors.")
+    player_choice = input("\nType 1 for Rock, 2 for Paper, and 3 for Scissors.")
 
-    kellet_choice = rps[int(kellet_choice) - 1]
+    player_choice = rps[int(player_choice) - 1]
 
     print("\nComputer throws %s. \n" % comp_choice)
-    print("%s throws %s \n" % (name, kellet_choice))
+    print("%s throws %s \n" % (name, player_choice))
 
     if comp_choice == "rock":
-        if kellet_choice == "rock":
+        if player_choice == "rock":
             print("It's a Tie. Throw again.")
-        elif kellet_choice == "scissors":
+        elif player_choice == "scissors":
             print("Computer wins.")
             comp_score = int(comp_score) + 1
             print("Computer: %i | %s: %i" % (int(comp_score), name, int(player_score)))
@@ -34,9 +34,9 @@ while play_game == True:
             print("Computer: %i | %s: %i" % (int(comp_score), name, int(player_score)))
 
     if comp_choice == "paper":
-        if kellet_choice == "paper":
+        if player_choice == "paper":
             print("It's a tie. Throw again.")
-        elif kellet_choice == "rock":
+        elif player_choice == "rock":
             print("Computer wins.")
             comp_score = int(comp_score) + 1
             print("Computer: %i | %s: %i" % (int(comp_score), name, int(player_score)))
@@ -46,9 +46,9 @@ while play_game == True:
             print("Computer: %i | %s: %i" % (int(comp_score), name, int(player_score)))
 
     if comp_choice == "scissors":
-        if kellet_choice == "scissors":
+        if player_choice == "scissors":
             print("It's a Tie. Throw again.")
-        elif kellet_choice == "paper":
+        elif player_choice == "paper":
             print("Computer wins.")
             comp_score = int(comp_score) + 1
             print("Computer: %i | %s: %i" % (int(comp_score), name, int(player_score)))
